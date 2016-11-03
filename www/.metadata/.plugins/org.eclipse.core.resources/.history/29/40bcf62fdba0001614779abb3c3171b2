@@ -1,0 +1,5 @@
+package com.silver.user.action;
+
+public class WelcomeUserAction {
+
+}

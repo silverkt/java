@@ -1,0 +1,451 @@
+body {
+}
+div.MainCol {
+    background: none;
+}
+.mksjpzWrapper {
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif,"songti";
+    background: #fff;
+    box-sizing: border-box;
+    margin: 9px 12px;
+}
+.mksjpzWrapper div {
+    box-sizing: border-box;
+}
+.tests {
+    overflow: auto!important;
+    width: 100%;
+}
+.mod-select {
+    background: url("../img/modle_select.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+}
+.mksjpzMs {
+    height: 28px;
+    width: 241px;
+    float: left;
+}
+div.mksjpzNxglMs {
+    height: 28px;
+    width: 241px;
+    float: none;
+}
+.inblock {
+    display: inline-block;
+    vertical-align: top;
+}
+.right {
+    float: right;
+}
+.left {float: left;}
+.newButton {
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+    background: #2e94e8;
+    background: -moz-linear-gradient(top, #59b3ef 0%, #2e94e8 100%);
+    background: -webkit-linear-gradient(top, #59b3ef 0%, #2e94e8 100%);
+    background: -ms-linear-gradient(top, #59b3ef 0%, #2e94e8 100%);
+    background: linear-gradient(top, #59b3ef 0%, #2e94e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#59b3ef', endColorstr='#2e94e8', GradientType=0);
+    border-bottom: 2px solid #1b6cb2;
+    cursor: pointer;
+}
+.p410 { padding: 4px 10px;}
+.p425 { padding: 4px 25px;}
+.newButtonCancel {
+    background: #f0f0f0;
+    background: -moz-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+    background: linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=0);
+    border: 1px solid #cacaca;
+    border-bottom: 2px solid #ddd;
+    color: #747474;
+}
+.mksjpzIcon {
+    display: inline-block;
+    cursor: pointer;
+    width: 16px;
+    height: 17px;
+}
+.mksjpzDel { background: url('../img/delIcon.png') no-repeat; }
+.mksjpzEdi { background: url('../img/editIcon.png') no-repeat; }
+.mksjpzSav { background: url('../img/isave.png') no-repeat; }
+.mksjpzArrD { background: url('../img/downArrowIcon.png') no-repeat; }
+.mksjpzArrU { background: url('../img/upArrowIcon.png') no-repeat; }
+.mksjpzTableBox {
+    margin-top: 8px;
+}
+
+.mksjpz_imgname{
+    background: url(../img/imgname.png) repeat-x;
+    background-size: 352px 41px;
+    padding-right: 5px;
+    !important;
+}
+.mksjpz_imgname p{
+    float: left;
+    padding-left: 1em;
+}
+.mksjpz_imgname input{
+    background: url(../img/iconimg.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.mksjpzTableBox > table > thead > tr {
+    border: 1px #d3d3d3;
+    border-style: none solid;
+}
+.mksjpzTableBox > table > thead > tr > th {
+    height: 29px;
+    border: 1px #d3d3d3;
+    border-style: solid none;
+    text-align: center;
+    background: #f0f0f0;
+    background: -moz-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    background: -ms-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    background: linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=0);
+}
+.mksjpzTableBox > table > tbody > tr > td {
+    text-align: center;
+    border: 1px #d3d3d3;
+    border-style: none solid solid;
+    height: 37px;
+    background: #fff;
+}
+.hnszImg {
+    width: 100px;
+}
+.mksjpzLine {
+    height: 28px;
+    margin-top: 8px;
+}
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+.mksjpzglszBlock {
+    padding-top: 20px;
+}
+.mksjpzNxjc,
+.mksjpzGlsz {
+    padding: 0 20px;
+    overflow-y: scroll;
+}
+.mksjpzglszbInner {
+    background: #f7f7f7;
+    position: relative;
+    border-top: 1px solid #ddd;
+    margin-top: 5px;
+    padding: 10px;
+}
+.mksjpzTitle {
+    position: absolute;
+    top: -10px;
+    color: #5b636c;
+    font-size: 14px;
+}
+.mr15 { margin-right: 10px;}
+.mksjpzHead {
+    height: 30px;
+    background: url('../img/mksjpzHeadIcon.jpg') repeat-x;
+    border: 1px #b5b5b5;
+    border-style: solid solid none solid;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    padding-left:13px;
+    overflow: hidden;
+    position: relative;
+}
+.mksjpzhTabBlock {
+    float: right;
+    font-size: 12px;
+}
+.mksjpzSubHead {
+    height: 30px;
+    background: #f0f0f0;
+    background: -moz-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    background: -ms-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    background: linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr="#f0f0f0", GradientType=0);
+    border: 1px #d3d3d3;
+    border-style: none solid solid;
+    color: #d3d3d3;
+    position: relative;
+}
+.mksjpzSubHead > div {
+    float: right;
+    line-height: 30px;
+}
+.mksjpzSubHead > div > a {
+    padding-right: 21px;
+    color: #d3d3d3;
+}
+.mksjpzhTabBlock > span {
+    cursor: pointer;
+    margin-right: 13px;
+}
+.mksjpzhtbSel {
+    background: #fff;
+    color: #5b636c;
+    padding: 3px 13px 7px;
+    border: 1px #919191;
+    border-style: solid solid none solid;
+    border-radius: 4px;
+    position: relative;
+    top: 1px;
+    
+}
+.mksjpzSubHead > div > a.active {
+    color: #38a3ee;
+}
+.xzxtzbBlock {
+    width: 450px;
+    height: auto;
+}
+.w118 { width: 118px;}
+.popLabelStyle {
+    display: inline-block;
+    text-align: right;
+}
+.w243 { width: 243px;}
+.popSelStyle {
+    vertical-align: middle;
+    float: none;
+    display: inline-block;
+}
+.w274 { width: 274px; }
+.w36 { width: 36px;}
+.w80 { width: 80px;}
+.plInner {
+   display: inline-block; 
+   font-size: 0;
+}
+.plInner > span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #5b636c;
+}
+.fs12 {
+    font-size: 12px;
+}
+.popBg {
+    background: url('../img/xmgl_fotbg.png') repeat-x 0 bottom;
+    padding: 17px 0 10px;
+}
+.mt9 {
+    margin-top: 9px;
+}
+.mtb4{
+	margin:4px 0;
+}
+.w241{
+	width: 241px;
+}
+.w205{
+	width: 205px;
+}
+.w221{
+	width: 221px;
+}
+.popInputStyle {
+     height: 20px;
+     background-color: #fff;
+     border: 1px solid #ccc;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+     transition: border 0.2s linear 0s;
+     padding: 2px 0 2px 5px; 
+     border-radius: 4px; 
+}
+.ml15 { margin-left: 15px;}
+.mlr1 { margin: 0 1px;}
+.mr1 { margin-right: 1px;}
+.popButtonArea {
+    padding: 11px 33px 11px 0;
+}
+.popCheckMsg{
+	color: red;
+    display: none;
+    margin-left: 124px;
+    padding:3px 0;
+}
+/*能效管理*/
+.nxglDataBlock {
+    width: 489px;
+}
+.nxglDataBlock > ul > li {
+    margin: 0 0 0 27px;
+    padding: 0 10px;
+    color: #5b636c;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 30px;
+    position: relative;
+    border: 1px solid #f7f7f7;
+}
+.nxglLines {
+    margin-top: 30px;
+}
+.nxglDataBlock > ul > li.delStyle {
+    border: 1px solid #39c;
+}
+.delX {
+    position: absolute;
+    color: #39c;
+    top: -6px;
+    right: 3px;
+    cursor: pointer;
+}
+.xznhIconBox li {
+    float: left;
+}
+.xznhIcon {
+    display: block;
+    cursor: pointer;
+    width: 51px;
+    height: 51px;
+    border: 1px solid #d3e4f0;
+}
+div.ghPic,
+div.gnPic {
+    width: 280px;
+    height: 44px;
+    margin-left: 124px;
+    border: 1px solid #c6cbd0;
+    padding: 9px 0;
+    border-radius: 4px;
+    background-position: center;
+}
+div.ghPic {
+    height: 141px;
+}
+.xmglRedRightArrow {
+    width: 153px;
+    background-image: url('../img/xmglIcon5.png');
+    background-repeat: no-repeat;
+    height: 44px;
+}
+.xmglBlueRightArrow {
+    background-image: url('../img/xmglIcon4.png') ;
+    background-repeat: no-repeat;
+    width: 153px;
+    height: 44px;
+}
+.xmglLightBlueRightArrow {
+    background-image: url('../img/xmglIcon14.png') ;
+    background-repeat: no-repeat;
+    width: 153px;
+    height: 44px;
+}
+.xmglOrangeRightArrow {
+    background-image: url('../img/xmglIcon13.png') ;
+    background-repeat: no-repeat;
+    width: 153px;
+    height: 44px;
+}
+.xmglBlueLeftArrow {
+    background-image: url('../img/xmglIcon1.jpg');
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 153px;
+}
+.xmglMidRedLeftArrow {
+    background: url('../img/xmglMidRed.png') no-repeat;
+    width: 153px;
+    height: 60px;
+}
+.xmglDeepBlueLeftArrow {
+    background: url('../img/xmglDeepBlue.png') no-repeat;
+    width: 153px;
+    height: 60px;
+}
+.esList > li > span{
+	text-indent:-99999999px;
+    width: 69px;
+    height: 61px;
+    overflow: hidden;
+    background-color: #f6fbfe;
+    color: #585858;
+    display: block;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 30px;
+    border: 1px solid #d3e4f0;
+    background-size: contain;
+    background-position: center;
+}
+.esList > li > span:hover {
+    border-color: #4ca0d9;
+}
+.haodianPic {
+    background-image: url('../img/xmglIcon22.png') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 163px;
+    height: 134px;
+}
+.haoqiPic {
+    background: url('../img/xmglIcon21.png') no-repeat;
+    width: 163px;
+    height: 155px;
+}
+.haoyouPic {
+    background: url('../img/xmglIcon20.png') no-repeat;
+    width: 163px;
+    height: 155px;
+}
+.haoshuiPic {
+    background: url('../img/xmglIcon19.png') no-repeat;
+    width: 163px;
+    height: 155px;
+}
+.haomeiPic {
+    background: url('../img/xmglIcon18.png') no-repeat;
+    width: 163px;
+    height: 155px;
+}
+.haoguangPic {
+    background: url('../img/xmglIcon17.png') no-repeat;
+    width: 163px;
+    height: 155px;
+}
+.haofengPic {
+    background: url('../img/xmglIcon16.png') no-repeat;
+    width: 163px;
+    height: 155px;
+}
+.haodiPic {
+    background: url('../img/xmglIcon15.png') no-repeat;
+    width: 163px;
+    height: 155px;
+}
+.haojiuPic {
+    background: url('../img/xmglHaojiuIcon.png') no-repeat;
+    width: 163px;
+    height: 155px;
+}
+span.hnszArrowIcon,
+span.gnszArrowIcon {
+    width: 63px;
+    height: 21px;
+    background-size: contain;
+    margin: auto;
+    display: block;
+}
+span.hnszArrowIcon {
+    width: 30px;
+    height: 30px;
+}

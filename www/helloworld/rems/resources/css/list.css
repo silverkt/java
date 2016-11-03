@@ -1,0 +1,29 @@
+.content .topFilter .tleft .group-list,.content .topFilter .tleft .father-list{
+	max-height:100px;
+	overflow-y:auto;
+}
+.searchBtn{
+	margin-top: 5px;
+}
+.datalist-div{
+	border-left: none; 
+	border-top: none;
+	overflow-y: auto;
+}
+.datalist-no{
+	width: 60px;
+}
+.datalist-op{
+	width: 90px;
+}
+.datalist-classimg{
+	width: 20px;
+	height: 20px;
+}
+.restyle-datalist-div{
+	padding-bottom: 0px;
+}
+div .bzlgl-add{
+	width: 370px; 
+	height: 360px;
+}

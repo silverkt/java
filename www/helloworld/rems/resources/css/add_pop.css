@@ -1,0 +1,66 @@
+/*设备设施管理-新增*/
+.inputinstancename{
+	width:186px;
+	float:left;
+}
+.requireditem{
+	color:red;
+	font-size:12px;
+	width:80px;
+	line-height: 26px;
+	float:left;
+	display:none;
+}
+.restyle-requireditem{
+	line-height: 30px;
+}
+.classType,.parentclassTag,.classtypeTag{
+	width:160px;
+	float:left;
+}
+.propertytype,.propertyclass,.propertyrelate{
+	width: 156px;
+	float: left;
+}
+.tblnygl tr td .classType .text{
+	color:#000;
+}
+.tblnygl tr .list{
+	z-index: 1001;
+	max-height: 200px;
+	overflow-y: auto;
+}
+.finistance{
+	width: 160px;
+}
+.tblnygl tr .restyle-list{
+	max-height: 100px;
+	overflow-y:auto;
+}
+.finistance{
+	width:160px;
+}
+.inputImage{
+	background:red; 
+	margin-top:0; 
+	display:block; 
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity:0;opacity: 0; 
+}
+.imageName{
+	float:left;
+	margin-top:-22px;
+	width:186px;
+}
+.TextArea1{
+	width:196px;
+	height: 50px;
+	resize: none;
+}
+.tck-cancel{
+	margin-right: 48px;
+}
+.bzlgl-add-cancel{
+	margin-right: 52px;
+}

@@ -1,0 +1,47 @@
+/*项目管理--设备设施管理*/
+.LeftCol{
+	background: #fff;
+}
+.classType1{
+	float: left; 
+	margin-top: -2px; 
+	border-radius: 3px; 
+	text-align: left; 
+	background-color: #fff; 
+	width: 170px;
+}
+.restyle-list{
+	height: 200px;
+}
+.restyle-xmgl_sarch{
+	margin-left: 10px; 
+	margin-top: 3px;
+}
+.wrap .datalist-div{
+	border-left: none;
+}
+.tableDiv{
+	background-color: #fff;
+	overflow: auto;
+}
+.area_popup .datalist-div{
+	padding-bottom: 0px;
+}
+.pop-onupdate-add{
+	width: 365px; 
+	/*height: 320px;*/
+}
+.sssbgl-pop-onupdate-add{
+	/*height: 400px;*/
+}
+.w60 .mod-select .list{
+	overflow-y: scroll;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.xmgl_input{
+		font:12px "Lucida Sans Unicode","Lucida Grande","Arial",sans-serif;
+	}
+}
+.tableDiv .datalist .sbssgl-table-hd{
+	height:32px;
+}

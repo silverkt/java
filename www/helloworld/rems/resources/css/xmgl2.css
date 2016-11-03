@@ -1,0 +1,175 @@
+﻿ /**********项目概览首页**************/
+html {
+    overflow-x:auto;
+}
+#container {
+    width: 100%;
+    position: relative;
+    overflow-x:auto;
+    z-index: 1;
+	overflow:auto;
+}
+.xmgl_tbl {
+    width:100%;
+    background:#dfe2e4;
+	overflow:auto;
+}
+    .xmgl_tbl td {
+        vertical-align:top;
+    }
+.xmgl_tbl .dqdata {
+   width:315px;
+   background:url(../img/gldqdata2.png) no-repeat right 17px;
+}
+    .xmgl_tbl .dqdata p {
+        font-size:20px;
+        font-family:微软雅黑;
+        width:260px;
+        height:28px;
+        line-height:20px;
+        float:right;
+        margin-top:0px;
+        color:#4f4f4f;
+        text-align:left;
+       margin-right:7px;
+    }
+	.xmgl_tbl .dqdata .dqdata_dr{margin-top:229px;}
+    .xmgl_tbl .dqdata .dqdata_dr2{margin-top:276px;}
+    .xmgl_tbl .midimg {
+        width:786px;
+        background:url(../img/glmidimg2.png) no-repeat right 17px;
+    }
+        
+.xmgl_tbl .midimg p {
+    color: #000;
+    display: block;
+    font-family: 微软雅黑;
+    font-size: 30px;
+    margin-left: 462px;
+    margin-top: 573px;
+}
+      .xmgl_tbl .drdata {
+        width:257px;
+        background:url(../img/gldr2.png) no-repeat  center  19px;
+    }
+    .xmgl_tbl .rigdata {
+        width:504px;
+    }
+    .xmgl_tbl .rigdata .rigdata_cont {
+        width: 498px;
+        height: 602px;
+        border-radius: 5px;
+        background: #fff;
+        position:relative;
+        margin-top: 17px;
+        -moz-box-shadow: 0 2px 2px #909294; /* Firefox */
+        -webkit-box-shadow: 0 2px 2px #909294; /* Safari and Chrome */
+        box-shadow: 2px 2px 2px #909294;
+    }
+        .xmgl_tbl .rigdata .rigdata_cont img {
+            width: 492px;
+            height: 596px;
+            padding: 3px;
+            border-radius: 5px;
+            -webkit-border-radius: 9px;
+            -moz-border-radius: 9px;
+        }
+.xmgl_tbl .rigdata .rigdata_cont .rigdata_zz {
+    position: absolute;
+    z-index: 1000;
+    width: 492px;
+    height: 597px;
+    background: rgba(0, 30, 63, 0.6) none repeat scroll 0 0 !important; /*实现FF背景透明，文字不透明*/
+    filter: Alpha(opacity=60);
+    background: #001e3f; /*实现IE背景透明*/
+    margin: 3px;
+    border-radius: 5px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    display:none;
+}
+.rigdata_foot {
+    height: 34px;
+    position: absolute;
+    left: 5px;
+	 top: 562px;
+    width: 490px;
+}
+    .rigdata_foot p {
+        width:412px;
+        height:34px;
+        line-height:34px;
+        float:left;
+        font-family:微软雅黑;
+        font-size:21px;
+        color:#fff;
+    }
+    .rigdata_foot a {
+        width:78px;
+        height:34px;
+        line-height:50px;
+        float:left;
+        font-size:12px;
+        color:#fff;
+        font-family:微软雅黑;
+        cursor:pointer;
+    }
+    .xmgl_tbl .nextP {
+        width: 42px;
+    }
+        .xmgl_tbl .nextP img {
+            cursor:pointer;
+            margin-top:242px;
+        }
+.rigdata_zz h1 {
+    width:487px;
+    height:30px;
+}
+.close {
+    display:block;
+    width:11px;
+    height:11px;
+    float:right;
+    background:url(../img/glclose.png) ;
+    margin-top:5px;
+}
+.rigdata_ul1 ,.rigdata_ul2{
+    margin-left:25px;
+    float:left;
+}
+    .rigdata_ul1 li, .rigdata_ul2 li {
+        width:300px;
+        height:20px;
+        line-height:20px;
+        color:#fff;
+        font-size:12px;
+        font-family:微软雅黑;
+        float:left;
+    }
+.rigdata_ul2 {
+    width:300px;
+    height:70px;
+    margin-top: 30px;
+    display:block;
+}
+    .rigdata_ul2 li {
+        width: 150px;
+    }
+    .drdata_ul {
+    width:257px;;
+    margin-top:84px;
+}
+    .drdata_ul li {
+        width:257px;
+        text-align:center;
+        font-size:20px;
+        color:#4f4f4f;
+        font-family:微软雅黑;
+        height:28px;
+    }
+
+ .drdata_ul .drdata_ulli1{margin-top:109px;}
+ .drdata_ul .drdata_ulli2{margin-top:86px;}
+.drdata_ul .drdata_ulli3{margin-top:73px;}
+.drdata_ul .drdata_ulli4{margin-top:65px;}
+#myxmgl_incont{ margin:0 auto; margin-top:30px;height:260px;width:360px;}

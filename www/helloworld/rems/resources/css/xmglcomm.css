@@ -1,0 +1,71 @@
+﻿/**********项目概览列表**************/
+.xmgl_list1 td .xmgl_list1_cont {
+    margin-right: 20px;
+    background: red;
+    height: 355px;
+    margin-top: 20px;
+    -moz-box-shadow: 0 2px 2px #D5D9DA; /* Firefox */
+     -webkit-box-shadow: 0 2px 2px #D5D9DA; /* Safari and Chrome */
+     box-shadow: 2px 2px 2px #D5D9DA;
+     background-color:#feffff;
+     background-image:url(../img/gLlist1bg.png);
+     background-repeat:repeat-x;
+     background-position:bottom;
+}
+.xmgl_list2 td .xmgl_list1_cont {
+      background-color:#ffffff;
+     background-image:url(../img/gllist2.png);
+     background-repeat:repeat-x;
+     background-position:bottom;
+}
+.xmgl_list1 td {
+    vertical-align:top;
+    
+}
+.xmgl_list1 td .xmgl_list1_cont p{
+    height:35px;
+    width:100%;
+    background:url(../img/gllisthead.png) repeat-x;
+}
+    .xmgl_list1 td .xmgl_list1_cont p span {
+        font-size: 12px;
+        color: #5b636c;
+        font-family: 微软雅黑;
+        line-height: 35px;
+        float:left;
+        margin-left:10px;
+    }
+    .xmgl_list1 td .xmgl_list1_cont p a {
+        float:right;
+        margin-right:10px;
+        padding:8px;
+        background:url(../img/gla.png) no-repeat;
+        margin-top:10px;
+    }
+.xmgl_incont {
+    width:100%;
+    height:320px;
+  
+}
+.xmgl_xtzb {
+    width:100%;
+    height:100%;
+    text-align:center;
+   
+}
+.xmgl_xtzb tr td {
+    background:url(../img/glxtzb2.png) no-repeat;
+    background-position:top;
+}
+.xtzbval {
+    font-size: 13px;
+    display: block;
+    color: #5B636C;
+    margin-top: 36px;
+}
+.xtzbname {
+    font-size:11px;
+    color:#5b636c;
+     display:block;
+    margin-top:10px;
+}

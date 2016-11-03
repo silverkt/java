@@ -1,0 +1,19 @@
+/*login样式*/
+body{
+	background:#DFE5EB;
+}
+.logtop{
+	display: none;
+}
+.error{
+	color: red;
+}
+.loginForm .tcenter tbody tr td{
+	vertical-align:top;
+}
+.loginForm .tcenter tbody tr td p{
+	padding-top: 4px;
+}
+.module-login .form .input input{
+	color: #000;
+}

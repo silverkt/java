@@ -1,0 +1,20 @@
+/*news样式*/
+.news-title{
+	font-weight:bold;
+	font-size:18px; 
+	color:#227ec9; 
+	width:706px; 
+	text-align:center; 
+	margin-left:-25px;
+}
+.news-publish{
+	font-size:12px; 
+	margin-bottom:9px; 
+	color:#a0a0a0;
+	margin-left:-25px;  
+	width:706px;  
+	text-align:center;
+}
+.news-publishi .news-publish-time{
+	margin-left:60px;
+}

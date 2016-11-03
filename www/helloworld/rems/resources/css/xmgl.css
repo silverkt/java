@@ -1,0 +1,228 @@
+﻿ /**********项目概览首页**************/
+.xmgl_tbl {
+    width:100%;
+    background:#dfe2e4;
+}
+    .xmgl_tbl td {
+        
+        vertical-align:top;
+    }
+.xmgl_tbl .dqdata {
+   width:206px;
+   background:url(../img/gldqdata.png) no-repeat right 17px;
+}
+    .xmgl_tbl .dqdata p {
+        font-size:13px;
+        font-family:微软雅黑;
+        width:164px;
+        height:20px;
+        line-height:20px;
+        float:right;
+        margin-top:0px;
+        color:#4f4f4f;
+        text-align:left;
+       margin-right:7px;
+    }
+    .xmgl_tbl .midimg {
+        width:495px;
+        background:url(../img/glmidimg.png) no-repeat right 17px;
+    }
+        .xmgl_tbl .midimg p {
+            display:block;
+            margin-top:430px;
+            font-size:22px;
+            font-size:22px;
+            font-family:微软雅黑;
+            margin-left:300px;
+            color:#000;
+        }
+      .xmgl_tbl .drdata {
+        width:180px;
+        background:url(../img/gldr.png) no-repeat center 84px;
+    }
+    .xmgl_tbl .rigdata {
+        width:374px;
+    }
+    .xmgl_tbl .rigdata .rigdata_cont {
+        width: 368px;
+        height: 458px;
+        border-radius: 5px;
+        background: #fff;
+        position:relative;
+        margin-top: 17px;
+        -moz-box-shadow: 0 2px 2px #909294; /* Firefox */
+        -webkit-box-shadow: 0 2px 2px #909294; /* Safari and Chrome */
+        box-shadow: 2px 2px 2px #909294;
+    }
+        .xmgl_tbl .rigdata .rigdata_cont img {
+            width: 362px;
+            height: 452px;
+            padding: 3px;
+            border-radius: 5px;
+            -webkit-border-radius: 9px;
+            -moz-border-radius: 9px;
+        }
+.xmgl_tbl .rigdata .rigdata_cont .rigdata_zz {
+    position: absolute;
+    z-index: 1000;
+    width: 362px;
+    height: 452px;
+    background: rgba(0, 30, 63, 0.6) none repeat scroll 0 0 !important; /*实现FF背景透明，文字不透明*/
+    filter: Alpha(opacity=60);
+    background: #001e3f; /*实现IE背景透明*/
+    margin: 3px;
+    border-radius: 5px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    display:none;
+}
+.rigdata_foot {
+    height: 34px;
+    width: 358px;
+    position: absolute;
+    top: 420px;
+    left: 5px;
+}
+    .rigdata_foot p {
+        width:280px;
+        height:34px;
+        line-height:34px;
+        float:left;
+        font-family:微软雅黑;
+        font-size:21px;
+        color:#fff;
+    }
+    .rigdata_foot a {
+        width:78px;
+        height:34px;
+        line-height:50px;
+        float:left;
+        font-size:12px;
+        color:#fff;
+        font-family:微软雅黑;
+        cursor:pointer;
+    }
+    .xmgl_tbl .nextP {
+        width: 42px;
+    }
+        .xmgl_tbl .nextP img {
+            cursor:pointer;
+            margin-top:242px;
+        }
+.rigdata_zz h1 {
+    width:356px;
+    height:30px;
+}
+.close {
+    display:block;
+    width:11px;
+    height:11px;
+    float:right;
+    background:url(../img/glclose.png) ;
+    margin-top:5px;
+}
+.rigdata_ul1 ,.rigdata_ul2{
+    margin-left:25px;
+    float:left;
+}
+    .rigdata_ul1 li, .rigdata_ul2 li {
+        width:300px;
+        height:20px;
+        line-height:20px;
+        color:#fff;
+        font-size:12px;
+        font-family:微软雅黑;
+        float:left;
+    }
+.rigdata_ul2 {
+    width:300px;
+    height:70px;
+    margin-top: 30px;
+    display:block;
+}
+    .rigdata_ul2 li {
+        width: 150px;
+    }
+    .drdata_ul {
+    width:180px;
+    margin-top:60px;
+}
+    .drdata_ul li {
+        width:180px;
+        text-align:center;
+        font-size:13px;
+        color:#4f4f4f;
+        font-family:微软雅黑;
+        height:23px;
+    }
+/**********项目概览列表**************/
+.xmgl_list1 td .xmgl_list1_cont {
+    margin-right: 20px;
+    background: red;
+    height: 355px;
+    margin-top: 20px;
+    -moz-box-shadow: 0 2px 2px #D5D9DA; /* Firefox */
+     -webkit-box-shadow: 0 2px 2px #D5D9DA; /* Safari and Chrome */
+     box-shadow: 2px 2px 2px #D5D9DA;
+     background-color:#feffff;
+     background-image:url(../img/gLlist1bg.png);
+     background-repeat:repeat-x;
+     background-position:bottom;
+}
+.xmgl_list2 td .xmgl_list1_cont {
+      background-color:#ffffff;
+     background-image:url(../img/gllist2.png);
+     background-repeat:repeat-x;
+     background-position:bottom;
+}
+.xmgl_list1 td {
+    vertical-align:top;
+    
+}
+.xmgl_list1 td .xmgl_list1_cont p{
+    height:35px;
+    width:100%;
+    background:url(../img/gllisthead.png) repeat-x;
+}
+    .xmgl_list1 td .xmgl_list1_cont p span {
+        font-size: 12px;
+        color: #5b636c;
+        font-family: 微软雅黑;
+        line-height: 35px;
+        float:left;
+        margin-left:10px;
+    }
+    .xmgl_list1 td .xmgl_list1_cont p a {
+        float:right;
+        margin-right:10px;
+        padding:8px;
+        background:url(../img/gla.png) no-repeat;
+        margin-top:10px;
+    }
+.xmgl_incont {
+    width:100%;
+    height:320px;
+  
+}
+.xmgl_xtzb {
+    width:100%;
+    height:100%;
+    text-align:center;
+   
+}
+.xmgl_xtzb tr td {
+    background:url(../img/glxtzb2.png) no-repeat;
+    background-position:top;
+}
+.xtzbval {
+    font-size: 13px;
+    display: block;
+    color: #5B636C;
+    margin-top: 36px;
+}
+.xtzbname {
+    font-size:11px;
+    color:#5b636c;
+     display:block;
+    margin-top:10px;
+}

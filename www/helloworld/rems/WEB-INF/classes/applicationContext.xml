@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context-3.0.xsd
+         http://www.springframework.org/schema/aop
+         http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+         http://www.springframework.org/schema/tx 
+         http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+         http://cxf.apache.org/jaxws 
+         http://cxf.apache.org/schemas/jaxws.xsd">
+         
+	<!-- 打开Spring的Annotation支持 -->
+	<context:annotation-config />
+	
+	<!-- 设定Spring 去哪些包中找Annotation -->
+	<context:component-scan base-package="com.rems.*" >
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+	
+	<!-- 启动对@AspectJ注解的支持  <aop:aspectj-autoproxy/> -->  
+    <!--<aop:aspectj-autoproxy proxy-target-class="true"/>
+    
+	--><bean id="springContextHolder" class="com.rems.util.SpringContextHolder" />
+	
+	<!-- 导入Src目录下的jdbc.properties文件 -->
+	<context:property-placeholder location="classpath:jdbc.properties" />
+
+<!-- 历史数据库配置 -->
+	<bean id="historydataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"><value>${jdbc.driverClassName}</value></property>
+		<property name="url"><value>${jdbc.url}</value></property>
+		<property name="username"><value>${jdbc.username}</value></property>
+		<property name="password"><value>${jdbc.password}</value></property>
+		<property name="maxActive"><value>80</value></property>
+		<property name="maxIdle"><value>20</value></property>
+		<property name="maxWait"><value>3000</value></property>
+		
+	</bean>
+	<bean id="historysessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="historydataSource" />
+		<!-- 设置Spring取那个包中查找相应的实体类 -->
+		<property name="packagesToScan"><value>com.rems.model.history</value></property>
+		<property name="hibernateProperties">
+			<value>
+				hibernate.dialect=org.hibernate.dialect.OracleDialect
+				hibernate.show_sql=false
+				hibernate.format_sql=false
+				hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider
+				hibernate.release_mode=auto
+				hibernate.connection.isolation=1
+				hibernate.cache.use_query_cache=false
+				hibernate.cache.use_second_level_cache=false
+				hibernate.jdbc.batch_size=25
+				hibernate.jdbc.fetch_size=50
+			</value>
+		</property>
+	</bean>
+<!-- end -->	
+	
+<!-- 本地数据库配置 -->
+	<!-- 数据源定义,使用dbcp 连接池
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"><value>${jdbc.driverClassName}</value></property>
+		<property name="url"><value>${jdbc.url}</value></property>
+		<property name="username"><value>${jdbc.username}</value></property>
+		<property name="password"><value>${jdbc.password}</value></property>
+		<property name="maxActive"><value>80</value></property>
+		<property name="maxIdle"><value>20</value></property>
+		<property name="maxWait"><value>3000</value></property>
+		<property name="validationQuery" value="select * from dual"/>
+	</bean> -->
+	<!-- TOMCAT_JDBC 20141111 man-->
+	<bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+		<property name="driverClassName"><value>${jdbc.driverClassName}</value></property>
+		<property name="url"><value>${jdbc.url}</value></property>
+		<property name="username"><value>${jdbc.username}</value></property>
+		<property name="password"><value>${jdbc.password}</value></property>	
+		<property name="maxActive"><value>${c3p0.maxPoolSize}</value></property>   
+	    <property name="initialSize"><value>${c3p0.initialPoolSize}</value></property>  
+	  
+	    <property name="validationQuery"><value>SELECT 1</value></property>  
+	    <property name="testOnBorrow"><value>true</value></property>  
+	    <property name="testOnReturn"><value>true</value></property>  
+	    <property name="testWhileIdle"><value>true</value></property>  
+	</bean>
+    
+	<!-- 如果使用的是Annotation的方式-->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<!-- 设置Spring取那个包中查找相应的实体类 -->
+		<property name="packagesToScan"><value>com.rems.model</value></property>
+		<property name="hibernateProperties">
+			<value>
+				hibernate.dialect=org.hibernate.dialect.OracleDialect
+				hibernate.show_sql=true
+				hibernate.format_sql=false
+				hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider
+				hibernate.release_mode=auto
+				hibernate.connection.isolation=1
+				hibernate.cache.use_query_cache=false
+				hibernate.cache.use_second_level_cache=false
+				hibernate.jdbc.batch_size=25
+				hibernate.jdbc.fetch_size=50
+			</value>
+		</property>
+	</bean>
+	
+	<!-- 创建事务管理器 -->
+	<bean id="txManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 配置AOP，Spring是通过AOP来进行事务管理的 -->
+	<aop:config>
+		<aop:pointcut id="allMethods"
+			expression="execution(* com.rems.service.impl.*.*(..))" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="allMethods" />
+	</aop:config>
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="del*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="change*" propagation="REQUIRED" />
+			<tx:method name="move*" propagation="REQUIRED" />
+			<tx:method name="submit*" propagation="REQUIRED" />
+			<!-- 各个模块记录查询日志，需要添加权限 -->
+			<tx:method name="view*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+<!-- end -->
+
+
+	<!-- shiro 开始 -->
+	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+	</bean>
+	
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean"> 
+	   <property name="securityManager" ref="securityManager"/> 
+	   <property name="loginUrl" value="/login"/> 
+	   <property name="successUrl" value="/index"/> 
+	   <property name="unauthorizedUrl" value="/login"/>
+	   <property name="filterChainDefinitions">  
+        <value>  
+            /login = anon
+            /forget/**=anon
+            /getKaptcha = anon
+            /email/** = anon
+            /resources/** =anon
+            /**  = authc
+        </value>  
+       </property>  
+	 </bean> 
+	
+	 <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager"> 
+	   <property name="realm" ref="shiroRealm"/> 
+	 </bean> 
+	
+	 <bean id="shiroRealm" class="com.rems.shiro.ShiroRealm"> 
+	   <!--  -->
+	   <property name="userService" ref="userService"/> 
+	   <property name="accessService" ref="accessService"/> 
+	   
+	   <property name="cacheManager" ref="shiroCacheManager"/> 
+	   
+	 </bean> 
+	 <!--  -->
+	<bean id="shiroCacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager"> 
+   		<property name="cacheManager" ref="cacheManager"/> 
+ 	</bean> 
+ 		
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/> 
+	
+	<!-- AOP式方法级权限检查   这两个类主要用于注解-->
+	<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" depends-on="lifecycleBeanPostProcessor"/>
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"/>
+	</bean>
+	<!-- shiro 结束 -->
+	
+	<bean
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="com.rems.exception.remsException">error</prop>
+			</props>
+		</property>
+	</bean>
+	
+		<!-- 异常处理器映射
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">  
+        <property name="exceptionMappings">  
+            <props>  
+                <prop key="org.apache.shiro.authz.UnauthorizedException">/noPermission</prop>  
+            </props>  
+        </property>  
+    </bean> 
+     -->
+</beans>

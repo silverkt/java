@@ -1,0 +1,1270 @@
+/******能源管理首页******/
+
+.nyglinul {
+    width:188px;
+    margin-left:10px;
+}
+    .nyglinul li {
+        width:188px;
+        height:22px;
+        line-height:22px;
+        border-radius:3px;
+        margin-top:10px;
+        cursor:pointer;
+        
+    }
+        .nyglinul li:hover {
+            background:#0094ff;
+            color:#fff;
+        }
+        .nyglinul li img {
+            float:left;
+            margin-left:5px;
+            margin-top:7px;
+            margin-right:7px;
+        }
+.nyglinulsel {
+    background: #0094ff;
+    color: #fff;
+}
+
+    .tblcomhead table tr td {
+        line-height:40px;
+    }
+.tblval {
+    color:#fff799;
+    font-size:14px;
+  
+}
+.tbltit {
+    color:white;
+    margin-left:20px;
+}
+.tbltb,.tblvalb {
+    font-size: 18px;
+    color: #fff;
+    margin-left:20px;
+}
+.tblvalb {
+    margin-left:30px;
+}
+.tblp {
+    width:26px;
+    height:25px;
+    background:url(../img/tblbgicon.png) no-repeat;
+    float:right;
+    margin-right:10px;
+    margin-left:10px;
+    margin-top:8px;
+    display:block;
+}
+    .tblp img  {
+        float:right;
+     margin-top:5px;
+     margin-right:3px;
+     cursor:pointer;
+    }
+.txttblval {
+    text-align:center;
+    height:20px;
+    border:1px solid #c6cbd0;
+}
+.btnsave {
+    width:71px;
+    height:29px;
+    display:block;
+    background:url(../img/newadd.png) no-repeat;
+     border:none;
+    float:right;
+    margin-top:15px;
+    margin-right:15px;
+    color:white;
+}
+.tblnygl tr td{
+   height:40px;
+}
+.nyglnotice {
+    color:#c6cbd0;
+    margin-left:40px;
+    font-size:12px;
+}
+/*****能源管理-指标查询******/
+.ztree li a:hover {
+    text-decoration: none;
+}
+.area_head {
+    width:188px;
+    height:32px;
+    background:#3798DB;
+    border-top:1px solid #2E87C1;
+}
+    .area_head span {
+        font-size:12px;
+        color:#fff;
+        line-height:32px;
+        margin-left:10px;
+    }
+.area_choose {
+    position: absolute;
+    height: 154px;
+    width: 157px;
+    border: 1px solid #DEDFE0;
+    border-bottom:none;
+    left: 15px;
+    z-index: 10000;
+    background:#fff;
+    display:none;
+}
+    .area_choose li {
+        height:30px;
+        border-bottom:1px solid #DEDFE0;
+        width: 147px;
+        background:#fff;
+        line-height:30px;
+        padding-left:10px;
+        color:#747474;
+        cursor:pointer;
+        
+    }
+        .area_choose li:hover {
+            background:#EFF0F1;
+        }
+        
+.ztree li span.button.bottom_open {
+    background: url("../img/treeimg.png") no-repeat scroll 5px -44px rgba(0, 0, 0, 0);
+}
+.ztree li span.button.roots_close{background:url(../img/treeimg.png) 5px 4px no-repeat;}
+.ztree li span.button.roots_open{background:url(../img/treeimg.png) 5px -44px no-repeat;}
+
+.ztree li span.button.bottom_close{background:url(../img/treeimg.png) 5px 4px no-repeat;}
+.ztree li span.button.bottom_open{background:url(../img/treeimg.png) 5px -44px no-repeat;}
+
+.ztree li span.button.center_close{background:url(../img/treeimg.png) 5px 4px no-repeat;}
+.ztree li span.button.center_open{background:url(../img/treeimg.png) 5px -44px no-repeat;}
+
+.ztree li span.button.ico_close{background:url(../img/treeimg.png) 0px -198px no-repeat;}
+.ztree li span.button.ico_open{background:url(../img/treeimg.png) 0px -198px no-repeat;}
+.ztree li a.curSelectedNode {
+    color: #fff;
+}
+
+.ztree li a.curSelectedNode {
+    behavior: url(ie-css3.htc);
+    background: none repeat scroll 0 0 #46ABEE;
+    border: 0 none;
+    border-radius: 0px;
+    color: #fff;
+    padding: 0px;
+}
+.w60 p {
+    background-repeat:no-repeat;
+}
+.w60 .is_can {
+    width:107px;
+    height:38px;
+    background:url(../img/iscan_03.png) no-repeat;
+}
+.w110 {
+    width:110px;
+}
+.w100 {
+    width:90px;
+    text-align:center;
+}
+.w60 .is_no {
+    width:107px;
+    height:38px;
+    background:url(../img/isno_03.png) no-repeat;
+}
+    .w60  p a {
+       font-size:12px;
+       color:#5b636c;
+       cursor:pointer;
+       float:left;
+       display:block;
+       width:52px;
+       text-align:center;
+       font-weight:bold;
+    }
+    .w60  p .is_can_sel {
+         color:#fff;
+        
+    }
+ /*****项目管理-项目信息管理******/
+.xmgl_sarch {
+    width:178px;
+    height:26px;
+    background:url(../img/input_serbg.png) no-repeat;
+    float:left;
+    margin-top:5px;
+}
+.xmgl_input {
+    display:block;
+    width:145px;
+    height:23px;
+    line-height:21px;
+    float:left;
+    border:none;
+    background:none;
+    padding-left:2px;
+    color:#5B616D;
+    font-size:12px;
+}
+.xmgl_serch {
+    display:block;
+    width:22px;
+    height:26px;
+    cursor:pointer;
+    float:left;
+}
+.xmgl_srear {
+    width:70px;
+    height:30px;
+    background:url(../img/xmgl_add.png) no-repeat;
+}
+.xml_del {
+    width:16px;
+    height:16px;
+    background:url(../img/xmgl_edit.png) no-repeat;
+    background-position:left center;
+}
+.xml_del2 {
+    width:16px;
+    height:16px;
+    margin-left:5px;
+    background:url(../img/xmgl_edit.png) no-repeat;
+    background-position:left center;
+}
+.xml_edite2 {
+    width: 16px;
+    height: 16px;
+      margin-right:5px;
+    background: url(../img/iconsave.png) no-repeat;
+    background-position: left center;
+}
+.xml_view{
+    width: 18px;
+    height: 16px;
+    margin-left:6px;
+    background: url("../img/gla.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.xml_save{
+     width:14px;
+    height:14px;
+    margin-right:5px;
+    background:url(../img/isave.png) no-repeat;
+    background-position:left center;
+}
+.xml_edite {
+    width:16px;
+    height:16px;
+    /*background:url(../img/xmgl_edit.png) no-repeat;*/
+	 background: url(../img/iconsave.png) no-repeat;
+    background-position:right center;
+    margin-left:10px;
+}
+.left_foot_cont {
+    width:190px;
+
+    background:#c6e4f9;
+}
+.xmgl_left_head {
+    clear:both;
+    width:190px;
+    height:32px;
+    background:url(../img/xmgl_leftebg.png) repeat-x;
+   
+}
+.xmgl_set {
+    width:180px;
+   height:52px;
+   float:left;
+
+}
+    .xmgl_set li {
+        float:left;
+        
+        color:#5b636c;
+        height:37px;
+        line-height:32px;
+        font-size:12px;
+        cursor:pointer;
+        margin-left:10px;
+    }
+    .xmgl_set .xmgl_sel {
+    color:#3aa3ec;
+     background:url(../img/xmgl_libg.png) no-repeat center bottom;
+}
+        .xmgl_set li img {
+            float:left;
+            margin-top:10px;
+            margin-right:5px;
+        }
+.left_foot_cont {
+    width:190px;
+    background:#BBDFF8;
+    float:left;
+}
+.xmlgl_left_shows {
+    width:166px;
+    margin:0 auto;
+    height:96px;
+    display:none;
+    float:left;
+    margin-left:12px;
+    
+}
+    .xmlgl_left_shows table {
+        width:100%;
+        height:96px;
+    }
+     .xmlgl_left_shows table  tr td{
+        margin:0 auto;
+        text-align:center;
+    }
+        .xmlgl_left_shows table tr td .xmgl_btn{
+            width:61px;
+            height:24px;
+            display:block;
+            text-align:center;
+            color:#fff;
+            font-size:12px;
+            line-height:21px;
+            background:url(../img/xmgl_btn.png) no-repeat;
+            border:none;
+            cursor:pointer;
+            margin-left:10px;
+        }
+        .xmlgl_left_shows table tr td .btnset {
+             margin-left:50px;
+        }
+        .xmlgl_left_shows table tr td .xmgl_txt {
+            width:165px;
+            height:22px;
+            border:1px solid #C7CAD1;
+        }
+.xmgl_detail {
+    display:block;
+    width:103px;
+    height:32px;
+    border:none;
+    background:url(../img/xmgl_btndetail_03.png) no-repeat;
+    color:#5b636c;
+    font-size:12px;
+    line-height:30px;
+    text-align:center;
+    margin:40px 36px;
+    margin-top:70px;
+}
+.xmgl_lename {
+    text-align:right;
+    height:30px;
+    width:100px;
+}
+.xmgl_addinput {
+    display:block;
+    width:223px;
+    height:24px;
+    background:url(../img/xmgl_inputbg2.png) no-repeat;
+   
+    border:none;
+    padding-left:3px;
+    padding-right:3px;
+}
+.zdy .xmgl_addinput {
+    float:left;
+}
+.zdy span {
+    float:left;
+    margin-left:5px;
+    margin-right:5px;
+}
+.xmgl_tbladd {
+    width:690px;
+    margin:0 auto;
+    display:none;
+}
+.xmgl_tbladd  tr td{
+   height:32px;
+}
+.xmgl_add_rig {
+    width:250px;
+}
+.xmglsel {
+    float:none;
+}
+.xmgl_selct {
+    float: left;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 192px;
+}
+#preview {
+    width: 226px;
+    height: 116px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+#preview img{
+	width: 226px;
+    height: 116px;
+	}
+.w20 {
+ 
+    text-align:center;
+}
+.zdy {
+    width:410px;
+    margin:0 auto;
+}
+    .zdy tr td {
+        height:34px;
+        text-align:center;
+    }
+        .zdy tr td input {
+            color:#C6C6C8;
+        }
+.xmgl_sjfh {
+    background:url(../img/xmgl_sjfhbg.png) no-repeat;
+    border:none;
+    float:left;
+    height:26px;
+    padding-left:3px;
+    padding-right:2px;
+}
+
+.sjfh_name {
+    text-align:right;
+    width:64px;
+}
+.sjfhtbl {
+    width:740px;
+    margin:0 auto;
+}
+    .sjfhtbl tr td {
+        height:40px;
+    }
+        .sjfhtbl tr td select {
+            float:left;
+            margin-top:4px;
+        }
+.xmgl_taba {
+    display:block;
+    text-align:center;
+    color:#fff;
+    float:left;
+    width:76px;
+    height:29px;
+    line-height:30px;
+}
+.xmgl_tabasel {
+    background:url(../img/xmgl_shwotab.png) no-repeat;
+    color:#2878c9;
+}
+.mod-pop {
+    /*height:600px;*/
+    background-position:bottom;
+}
+.mod-pop .bd2 {
+     background:url(../img/xmgl_fotbg.png) repeat-x;
+     height:450px;
+     background-position:bottom;
+}
+
+.nxfx_sbnx thead td {
+    background: url("../img/datalist-thbg.png") repeat-x scroll left top rgba(0, 0, 0, 0);
+    background-position:bottom ;
+    color: #5b636c;
+    height: 33px;
+	background-size:100% 100%;
+}
+.energyManagement-lssjcx .left-nav #selectSb .list{height:500px;overflow-y:auto;z-index:101;}
+.xmgl_lename .xmgl_selct  .list{height:500px;overflow-y:auto;z-index:101;}
+/***********************项目概览**************************/
+
+.remote_cont {
+    width:100%;
+    height:100%;
+   margin-top:5px;
+   margin-left:5px;
+}
+.remote_tbl {
+    width:100%;
+    vertical-align:top;
+}
+#remote_tbl_left {
+    vertical-align:top;
+    height:300px;
+    background:#F9FAFC;
+    border:1px solid #D4D7D9;
+    
+}
+#remote_tbl_rig {
+    vertical-align:top;
+    height:300px;
+    background:#333;
+}
+.remote_rig_cont {
+    width:100%;
+}
+    .remote_rig_cont tr td {
+        width:50%;
+    }
+#remote_tbl_left1 {
+    width:512px;
+    
+     vertical-align:top;
+}
+#remote_tbl_left2 {
+    width:636px;
+    vertical-align:top;
+    display:none;
+}
+.remote_left_head {
+    width:512px;
+    margin:0 auto;
+    height:56px;
+    line-height:56px;
+    font-size:18px;
+     text-align:center;
+     color:#5b636c;
+      vertical-align:top;
+}
+#remote_tbl_left1 .w224,#remote_tbl_left2 .w224 {
+    width:224px;
+    height:224px;
+    background:url(../img/roCenterbg.png) no-repeat;
+    background-position: center;
+}
+
+    #remote_tbl_left1 .w224 .remote_224_cont,#remote_tbl_left2 .w224 .remote_224_cont {
+        width:110px;
+        height:110px;
+        float:left;
+        text-align:center;
+        color:#fff;
+        font-size:12px;
+    }
+        #remote_tbl_left1 .w224 .remote_224_cont span ,#remote_tbl_left2 .w224 .remote_224_cont span{
+            display:block;
+            margin-top:30px;
+            font-size:14px;
+        }
+#remote_tbl_left1 .w141 {
+    width:141px;
+    height:223px;
+}
+#remote_tbl_left1 .remote_xhpl {
+    width:114px;
+    height:48px;
+     background:url(../img/remote_hnp.png) no-repeat;
+     margin-left:10px;
+    
+}
+#remote_tbl_left1 .remote_xhpl {
+    margin-left:10px;
+}
+    #remote_tbl_left1 .remote_xhpl a {
+        display:block;
+        height:24px;
+        width:114px;
+        padding-left:5px;
+        line-height:20px;
+        color:white;
+        font-size:12px;
+        font-family:宋体;
+         margin-left:4px;
+    }
+        #remote_tbl_left1 .remote_xhpl a span {
+            margin-right:4px;
+           
+        }
+#remote_tbl_left2 .w206 {
+    width:206px;
+}
+/*********************项目排名2***********************/
+.xmpm_tab {
+    width:102px;
+    height:31px;
+   margin-top:1px;
+   z-index:10000;
+}
+    .xmpm_tab li {
+        width:34px;
+        height:31px;
+        cursor:pointer;
+        text-align:center;
+        font-size:12px; 
+        color:#fff;
+        float:left;
+        line-height:37px;
+    }
+    .xmpm_tab .xmpm_tabsel {
+        background:url(../img/tabymd.png) no-repeat;
+        color:#5b636c;
+    }
+.filterdiv {
+    cursor:pointer;
+}
+.filterdiv input {
+    display:block;
+    float:left;
+    margin-right:15px;
+    width:120px;
+    display:none;
+}
+.mySelect {
+    width: 136px;
+    height: 26px;
+    position: absolute;
+    border: 1px solid #CFCFCF;
+    background: url(../img/myselectbg.png) repeat-x;
+    border-radius: 4px;
+    -moz-box-shadow: 0 1px 1px #D9D9D9; /* Firefox */
+    -webkit-box-shadow: 0 1px 1px #D9D9D9; /* Safari and Chrome */
+    box-shadow: 1px 1px 1px #D9D9D9;
+    text-align:left;
+}
+.mySelect_cont {
+    position: relative;
+    width: 151px;
+    height: 170px;
+    margin-top: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+     background:#FCFCFC;
+     border:1px solid #D7D7D7;
+     border-top:none;
+     -moz-box-shadow: 0 1px 1px #ECECEC; /* Firefox */
+     -webkit-box-shadow: 0 1px 1px #ECECEC; /* Safari and Chrome */
+     box-shadow: 1px 1px 1px #ECECEC;
+     display:none;
+}
+#mySelect_cont {
+   width: 128px;
+   height:27px;
+   line-height:27px;
+   color:#5b636c;
+   float:left;
+   margin-left:3px;
+   float:left;
+   z-index:10000;
+}
+.togle {
+    display:block;
+    width:7px;
+    height:4px;
+
+    background:url(../img/select-xl.png) no-repeat;
+   background-position:left center;
+   cursor:pointer;
+   float:left;
+   margin-top:11px;
+}
+    #mySelect_cont span {
+        display:block;
+        height:15px;
+        margin-left:5px;
+        float:left;
+    }
+        #mySelect_cont span a {
+            display:block;
+            width:8px;
+           height:7px;
+           float:right;
+           margin-left:3px;
+           margin-right:5px;
+           margin-top:10px;
+            background:url(../img/myseicon2.png) no-repeat;
+        }
+     #mySelect_cont span a:hover {
+        background:url(../img/myseicon.png) no-repeat;
+        background-position:center;
+    }
+.mySelect_ul {
+    width:151px;
+    background:#FCFCFC;
+
+}
+    .mySelect_ul li {
+        width:151px;
+        height:24px;
+        float:left;
+        line-height:24px;
+    }
+        .mySelect_ul li input {
+            float:left;
+            margin-top:6px;
+            margin-left:10px;
+            cursor:pointer;
+        }
+        .mySelect_ul li span {
+            float: left;
+            margin-left: 3px;
+            height: 24px;
+        }
+.mySelect_ul_se {
+    background:#BBDBF4;
+}
+/**************泛能站排名******************/
+.filterdiv {
+    width: 90px;
+    height: 22px;
+    float: left;
+    margin-top: -30px;
+    overflow: hidden;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    cursor:auto;
+}
+    .filterdiv input {   
+        display: none;
+    }
+    .filterdiv .txtSeDay {
+        width: 90px;
+        
+        overflow:hidden;
+    }
+    .filterdiv .txtSeMon {
+        width: 70px;
+        overflow:hidden;
+    }
+     .filterdiv .txtSeYear {
+        width: 70px;
+        overflow:hidden;
+        display:block;
+    }
+.fnzpm_cont {
+    width: 100%;
+    background: #EBEFF2;
+}
+    .fnzpm_cont .fnzpm_td {
+        width: 33%;
+        vertical-align:top;
+    }
+.fnzpm_td_cont {
+    margin-right: 15px;
+    background:#fff;
+    margin-bottom:15px;
+    -moz-box-shadow: 0 2px 2px #D5D9DA; /* Firefox */
+     -webkit-box-shadow: 0 2px 2px #D5D9DA; /* Safari and Chrome */
+     box-shadow: 2px 2px 2px #D5D9DA;
+     height:360px;
+}
+.fnzpm_innertbl {
+    margin-right: 15px;
+    width: 97%;
+    margin: 0 auto;
+}
+.fnzpm_innertbl  .fnzpm_w20 {
+    width: 20px;
+    height: 28px;
+    text-align: right;
+    padding-left: 3px;
+    padding-right: 5px;
+    color: #5b636c;
+    font-size: 13px;
+    border-bottom: 1px solid #e2e2e2;
+}
+    .fnzpm_innertbl .fnzpm_w62 {
+        width: 62px;
+        height: 28px;
+        text-align: right;
+        padding-right: 5px;
+        color: #5b636c;
+        font-size: 13px;
+        border-bottom: 1px solid #e2e2e2;
+    }
+.fnzpm_innertbl .fnzpm_w100 {
+    color: #5b636c;
+    height: 28px;
+    font-size: 13px;
+    border-bottom: 1px solid #e2e2e2;
+	padding-right:5px;
+}
+.fnzpm_innertbl .fnzpm_w100 .up,.datalistSec tr td .up{
+    background: url("../img/iconup.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    padding-right:10px;
+}
+.fnzpm_innertbl .fnzpm_w100 .down,.datalistSec tr td .down{
+    background: url("../img/icondown.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    padding-right:10px;
+}
+.fnzpm_head {
+    height: 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #B4B4B4;
+    background: url("../img/tblheadbg2.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+}
+    .fnzpm_head span {
+        font-family:微软雅黑;
+        font-size:14px;
+        color:#fff;
+        line-height:31px;
+        font-weight:bold;
+        margin-left:10px;
+    }
+.fnzpm_canl {
+    background: url("../img/datalist-thbg3.png") repeat-x;
+    height:31px;
+    overflow:hidden;
+    background-position:2px center;
+    width:100%;
+}
+.datenow {
+    font-size: 12px;
+    float: left;
+    font-family:宋体;
+    background: url(../img/iconcalender2.png) no-repeat;
+    padding-right: 23px;
+    margin-left: 10px;
+    background-position: right center;
+    color: #738391;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    cursor:pointer;
+}
+.fnzpm_canl a {
+    float:right;
+    color:#738391;
+    font-size:12px;
+    margin-top:6px;
+    margin-right:5px;
+}
+.txtSeYear
+/**********设施设备管理*************/
+.datalist .sssbgl_thead td{
+    height: 33px;
+    background-position: bottom;
+    border-bottom:none;
+    border-top:none;
+}
+.tblcomhead .h2 {
+    font-family:微软雅黑;
+    color:#fff;
+    font-size:13px;
+    margin-left:5px;
+   line-height:31px;
+}
+.tblcomhead .ygysxpz {
+    float:right;
+        margin-top:3px;
+        height:29px;
+        overflow:hidden;
+}
+    .tblcomhead .ygysxpz li {
+        float:left;
+        text-align:center;
+        line-height:31px;
+        font-size:12px;
+        color:#fff;
+        height:34px;
+        width:76px;
+        cursor:pointer;
+    }
+    .tblcomhead .ygysxpz .li_sel {
+        font-size:12px;
+        color:#5b636c;
+        background:url(../img/gysxpzli.png) no-repeat;
+    }
+.gysxpz tbody td {
+    height:28px;
+}
+.gysxpz_select .mod-select {
+    background: url(../img/modle_select.png) repeat-x;
+    border-right:none;
+}
+.gysxpz .even td{border-bottom:1px solid #e6e6e6;}
+.gysxpz .odd td{border-bottom:1px solid #e6e6e6;background:#f3f3f3;}
+.txtgysxpz input {
+    border:1px solid #7CADD8;
+}
+/*模块数据配置*/
+.sjpzlc {  background: url(../img/tblheadbg2.png) repeat-x;height: 38px; border-top:1px solid #b2b2b3;border-bottom:1px solid #b2b2b3; }
+.datalist-div{background:#fff;padding-bottom:10px;border:1px solid #e2e2e2;}
+.gysxpz_tbl1 td{text-align:center;font-size:12px;}
+.gysxpz_tbl1 thead td{height:52px;background:url(../img/datalist-thbg.png) left top repeat-x;color:#5b636c;}
+.gysxpz_tbl1 tbody td{height:30px;color:#738391;font-family:Arial;}
+.gysxpz_tbl1 tfoot td{height:33px;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;background:#e4f5fe;font-family:Arial;}
+.gysxpz_tbl1 .odd td{border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;background:#f3f3f3;}
+.sjpz_thead tr td {
+    border-top: none;
+    height: 31px;
+    background-position: bottom;
+    text-align: right;
+}
+    .sjpz_thead tr td a { 
+        font-size:12px;
+        color:#5b636c;
+        margin-right:23px;
+    }
+    .sjpz_thead tr td .sjpz_sel {
+        color: #38a3ee;
+    }
+.gysxpz_tbl1 tr .sjpz_tbl1td {
+    height:242px;
+    background:url(../img/sjpz_tbl1.png) repeat-x;
+    background-position:bottom;
+}
+.sjpz_tbl1_cont {
+    width:662px;
+    height:182px;
+    margin:0 auto;
+}
+.sjpz_tbl1_left {
+    width:338px;
+    height:182px;
+    float:left;
+}
+.sjpz_tbl1_left .sjpz_tbl_num  a{
+    display:block;
+    width:99px;
+    height:29px;
+    background:url(../img/sjpz_num.png) no-repeat;
+    font-size:30px;
+    color:#fff;
+    text-align:center;
+    line-height:29px;
+    margin-top:5px;
+    font-weight:bold;
+}
+.sjpz_tbl1_rig {
+     width:308px;
+    height:182px;
+    float:right;
+}
+    .sjpz_tbl1_rig tr td a {
+        font-family:宋体;
+        font-weight:bold;
+        margin:0 auto;
+        font-size:30px;
+        color:#fff;
+        display:block;
+        width:150px;
+        height:54px;
+        line-height:54px;
+        text-align:center;
+        background:#9eb6bf;
+    }
+.sjpz_tbl1_left tr .sjpz_tbl1_left_mid a{
+    display:block;
+    width:122px;
+    height:121px;
+    text-align:center;
+    font-size:31px;
+    color:#697e86;
+    background:url(../img/sjpz_tbl1bg.png) no-repeat;
+    line-height:121px;
+    font-weight:bold;
+    margin:0 auto;
+}
+.sjpz_tbl_rowpan {
+    border-bottom:27px solid #bdced4;
+   
+}
+.sjpz_tbl_rowpan  p{
+    height:38px;
+    border-bottom:2px solid #a8dff5;
+    height:27px;
+}
+    .sjpz_tbl_rowpan p .le {
+        float: left;
+        font-size: 16px;
+        color: #a6b6c8;
+        font-family: 微软雅黑;
+        
+    }
+    .sjpz_tbl_rowpan .bot {
+        float: right;
+        font-size: 30px;
+        margin-top: 0;
+        margin-right: 41px;
+        position: relative;
+        margin-top: -37px;
+        font-weight: bold;
+        color:#687F87;
+    }
+    .sjpz_tbl_rowpan p .ri {
+        float:right; 
+        font-size:12px;
+        color:#a6b6c8;
+        margin-top:5px;
+    }
+    .sjpz_tbl_rowpan .anum {
+     
+    }
+.sjpz_down_cont {
+    width: 100%;
+    height:600px;
+    overflow-y: scroll;
+}
+.sjpz_down_cont_head {
+    width:100%;
+    height:60px;
+    background:url(../img/hztsz_bg.png) repeat-x;
+    background-position:bottom;
+}
+    .sjpz_down_cont_head h5 {
+        height:60px;
+        float:left;
+        background:url(../img/hztsz_bg2.png) no-repeat;
+        background-position:bottom center;
+        line-height:43px;
+        margin-left:10px;
+        font-size:12px;
+        font-family:微软雅黑;
+    }
+.sjpz_zttsz {
+    width: 100%;
+
+}
+  
+    .sjpz_zttsz tr  .w30 {
+        width:30px;
+    }
+.tblOut {
+      padding-bottom:30px;
+     -moz-box-shadow: 0 1px 2px #F6F6F6; /* Firefox */
+     -webkit-box-shadow: 0 3px 2px #F6F6F6; /* Safari and Chrome */
+     box-shadow: 2px 2px 2px #F6F6F6;
+   margin-top:0;
+}
+.sjpz_zttsz_inner {
+     margin-top:15px;
+   
+     border: 1px solid #CFD0D5;
+}
+    .sjpz_zttsz_inner tr td {
+        height: 30px;
+        border-left: 1px solid #CFD0D5;
+        border-bottom: 1px solid #CFD0D5;
+    }
+    .sjpz_zttsz_inner thead tr td {
+        height:30px;
+        background: url("../img/datalist-thbg.png") repeat-x scroll left top rgba(0, 0, 0, 0);
+        border:none;
+        border-bottom: 1px solid #CFD0D5;
+    }
+    .sjpz_zttsz_inner td .mod-select {
+        margin: 0;
+        height: 28px;
+        box-shadow: none;
+        float: none;
+        text-align: left;
+       
+    }
+    .sjpz_zttsz_inner .chooseSb {
+        padding-left:30px;
+         padding-right:30px;
+    }
+    .sjpz_zttsz_inner tr .wz {
+        background:#F8F9FD;
+    }
+     .sjpz_zttsz_inner tr .bc {
+        background:#F8F9FD;
+    }
+        .sjpz_zttsz_inner tr .wz .zs {
+            
+            background:url(../img/zs.png) no-repeat;
+            background-position:right center;
+            padding:5px 30px;
+            
+        }
+        .sjpz_zttsz_inner tr .wz .zs2 {
+            
+            background:url(../img/zs2.png) no-repeat;
+            background-position:right center;
+            padding:5px ;
+            padding-right:45px;
+            
+        }
+        .sjpz_zttsz_inner tr .wz .zx {
+            
+            background:url(../img/zx.png) no-repeat;
+            background-position:right center;
+            padding:5px 30px;
+            
+        }
+         .sjpz_zttsz_inner tr .wz .zx2 {
+            
+            background:url(../img/zx2.png) no-repeat;
+            background-position:right center;
+            padding:5px ;
+            padding-right:45px;
+            
+        }
+        .sjpz_zttsz_inner tr .wz .ys {
+            
+            background:url(../img/ys.png) no-repeat;
+            background-position:right center;
+            padding:5px 30px;
+            
+        }
+        .sjpz_zttsz_inner tr .wz .ys2 {
+            
+            background:url(../img/ys2.png) no-repeat;
+            background-position:right center;
+            padding:5px ;
+            padding-right:45px;
+            
+        }
+        .sjpz_zttsz_inner tr .wz .yx {
+            
+            background:url(../img/yx.png) no-repeat;
+            background-position:right center;
+            padding:5px 30px;
+            
+        }
+          .sjpz_zttsz_inner tr .wz .yx2 {
+            
+            background:url(../img/yx2.png) no-repeat;
+            background-position:right center;
+            padding:5px ;
+            padding-right:45px;
+            
+        }
+    .sjpz_zttsz_inner .mod-select {
+        background: url("../img/modle_select.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    .mod-select {
+    padding: 0 30px 0 5px;
+	background: url("../img/mod-select-bg.png") repeat-x scroll left top rgba(0, 0, 0, 0);
+    
+}
+.sjpz_zttsz_inner .sjpz_save {
+    display:block;
+    width:64px;
+    height:27px;
+    line-height:25px;
+    text-align:center;
+    color:#fff;
+    font-size:12px;
+    font-family:宋体;
+    background:url(../img/btn6427.png) no-repeat;
+    float:right;
+    margin-right:30px;
+}
+    .sjpz_zttsz_inner .sjpz_nsave {
+        background:url(../img/xmgl_btn2.png) no-repeat;
+    }
+.sjpz_zttsz_inner2 {
+     border: none;
+
+}
+.sjpz_zttsz_inner2  td{
+     border: none;
+}
+    .sjpz_zttsz_inner2 .chooseSb {
+        width: 190px;
+        border-left: none;
+        border-bottom: none;
+    }
+    .sjpz_zttsz_inner2 .tdrigsave {
+        border-left: none;
+        border-bottom: none;
+        width: 100px;
+    }
+    .sjpz_zttsz_inner2 .chooseCont {
+        text-align:left;
+    }
+    .sjpz_zttsz_inner2 .chooseCont li{
+        float:left;
+       height:26px;
+       padding-left:7px;
+       line-height:26px;
+         border:1px solid #fff;
+        margin-left:6px;
+        font-size:12px;
+        color:#5b636c;
+        padding-right:13px;
+        cursor:pointer;
+    }
+       .sjpz_zttsz_inner2 .chooseCont li img{
+        float:right;
+        margin-top:2px;
+        margin-right:5px;
+        margin-left:3px;
+        display:none;
+        cursor:pointer;
+    } 
+       .sjpz_zttsz_inner2 .chooseCont .sel_li  {
+           border-color :#38A4EF;
+           display:block;
+           padding-right:0;
+        }
+       .sjpz_zttsz_inner2 .chooseCont .sel_li img {
+           
+           display:block;
+        }
+.sjpz_zttsz_inner2 tr td {
+    border-left: none;
+    border-bottom: none;
+    height:40px;   
+}
+    /****************类别管理**************/
+.lbgl .mod-select {
+    float: left;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 90px;
+	background: url("../img/mod-select-bg.png") repeat-x scroll left top rgba(0, 0, 0, 0);
+}
+.lbgl .lbglspan {
+    float: left;
+    margin-left: 12px;
+    color: #373737;
+    margin-top: 3px;
+}
+.lbgl .lbglname {
+    float: left;
+    width: 140px;
+    height: 23px;
+    border: 1px solid #E6E6E6;
+    box-shadow: 1px 1px 1px #d9d9d9;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: #373737;
+    padding-left:2px;
+    padding-right:2px;
+	background: url("../img/mod-select-bg.png") repeat-x scroll left top rgba(0, 0, 0, 0);
+}
+.lbgltbl tr td {
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+}
+#mySelect_cont .my_p {
+        display:block;
+        height:25px;
+        margin-left:5px;
+        float:left;
+     
+    }
+                
+            #mySelect_cont .my_p span {
+                 float:left;
+            }
+        #mySelect_cont .my_p   a {
+            display:block;
+            width:8px;
+           height:7px;
+           float:left;
+           margin-left:5px;
+           margin-right:5px;
+           margin-top:10px;
+            background:url(../img/myseicon2.png) no-repeat;
+        }
+     #mySelect_cont .my_p   a:hover {
+        background:url(../img/myseicon.png) no-repeat;
+        background-position:center;
+    }
+/*-----------------------------------------------save.jsp----------------------------------------------------------*/
+/*项目信息弹窗*/
+form#projectselfInfoForm thead{background: url(../img/datalist-thbg.png) left top repeat-x;border:1px solid #e6e6e6;}
+form#projectselfInfoForm td{text-align: center;color:#5b636c; }
+form#projectselfInfoForm td input{background: none;text-align: center;color: #5b636c;}
+form#projectselfInfoForm tbody td{border-right:1px solid #e6e6e6;}
+form#projectselfInfoForm tbody tr{border:1px solid #e6e6e6;border-top: none;}
+form#projectselfInfoForm tbody tr.even{background: #f3f3f3;}

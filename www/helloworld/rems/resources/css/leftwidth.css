@@ -1,0 +1,53 @@
+﻿.LeftCol {
+    width:222px;  background:#fff;
+}
+.left-nav {
+    width:227px;
+    /*background:#fff;*/
+    background-image:none;
+}
+
+.left-nav {
+    /*background: url("../img/left-bg2.png") repeat-y scroll right top rgba(0, 0, 0, 0);*/
+     width:222px;
+}
+.left-nav .tab-nav {
+    background: none repeat scroll 0 0 #3498db;
+    height: 30px;
+    padding-top: 2px;
+}
+.MainCol {
+    margin-left:222px;
+}
+.mod-select {
+    padding: 0 30px 0 10px;
+    width:166px;
+}
+.select-sblx  .list{ 
+    width:150px;
+}
+    .mod-select .text {
+      
+    }
+
+.energyManagement-lssjcx .left-nav .mod-select {
+    margin-left:5px;
+}
+.list {
+    width:190px;
+    
+}
+.lsit ul  li a{
+    float:left;
+    margin-left:-5px;
+    color:red;
+}
+#selectsBtype {
+    width:166px;
+}
+.energyManagement-lssjcx .left-nav .select-sblx {
+    background: url("../img/select-big2.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: 0 none;
+    padding-bottom: 1px;
+    padding-top: 2px;
+}
